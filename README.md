@@ -1,4 +1,4 @@
-# Supercomputing venv templates
+# venv templates for remote clusters
 
 This repo is intended to contain specific `venv` environment templates often recommended for supercomputing clusters.
 
