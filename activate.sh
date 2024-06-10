@@ -8,8 +8,8 @@ ABSOLUTE_PATH="$(realpath "${RELATIVE_PATH}")"
 
 [[ "$0" != "${SOURCE_PATH}" ]] && echo "The activation script must be sourced, otherwise the virtual environment will not work." || ( echo "Vars script must be sourced." && exit 1) ;
 
-source "${ABSOLUTE_PATH}"/config.sh
-source "${ABSOLUTE_PATH}"/modules.sh
+source "${ABSOLUTE_PATH}"/config.sh $1 $2
+# source "${ABSOLUTE_PATH}"/modules.sh
 
 export PYTHONPATH="$(echo "${ENV_DIR}"/lib/python*/site-packages):${PYTHONPATH}"
 

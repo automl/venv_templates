@@ -2,6 +2,27 @@ This branch is a modified *copy* of Stefan Kesselheim's [`sc_venv_template`](htt
 
 ---
 
+### Main step to create a new environment:
+```bash
+bash setup.sh <env-name> <env-target-dir> <path-to-a-requirements.txt>
+```
+
+### Main step to source an existing environment:
+```bash
+source activate.sh <env-name> <env-target-dir>
+```
+
+### To use `Poetry` and a `pyproject.toml`
+* Run `setup.sh` with a blank `requirements.txt`
+* Source the environment as above
+* Run `poetry install` or `poetry update` as normal
+
+---
+---
+---
+Below, original repo's README:
+---
+
 Supercomputing Environment Template using Python Virtual Environments
 =================
 
