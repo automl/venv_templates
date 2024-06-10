@@ -4,4 +4,4 @@ This repo is intended to contain specific `venv` environment templates often rec
 
 Different branches will contain modules pertaining to such templates:
 * `meta`: contains a venv template tested on our internal META cluster
-* `juwels`: contains a copy of the template and guide from [here](https://gitlab.jsc.fz-juelich.de/kesselheim1/sc_venv_template).
+* [`juwels`](https://github.com/automl/venv_templates/tree/juwels): contains a copy of the template and guide from [here](https://gitlab.jsc.fz-juelich.de/kesselheim1/sc_venv_template).
