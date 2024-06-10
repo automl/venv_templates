@@ -2,10 +2,22 @@ This branch is a modified *copy* of Stefan Kesselheim's [`sc_venv_template`](htt
 
 ---
 
+### Basic example protocol
+
+* Have a clone of this repo on your local/workspace
+* Use the scripts available to setup, manage environments
+* Especially useful for HPCs with preset modules
+
+The commands below can work even with relative path if current directory is the current target project.
+
 ### Main step to create a new environment:
 ```bash
-bash setup.sh <env-name> <env-target-dir> <path-to-a-requirements.txt>
+bash setup.sh <env_name> <env_target_dir> <path_to_a_requirements.txt>
 ```
+Defaults for each option above:
+* <env_name>: `venv_template`
+* <env_target_dir>: `venv_templates/venv/`
+* <path_to_a_requirements.txt>: `venv_templates/requirements.txt`
 
 ### Main step to source an existing environment:
 ```bash
