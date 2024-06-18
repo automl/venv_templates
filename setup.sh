@@ -16,13 +16,12 @@ source "${ABSOLUTE_PATH}"/config.sh $1 $2
 
 # Creates the virtual environment
 echo "Creating environment '"$ENV_NAME"' in "$ENV_DIR
-python3 -m venv --prompt "$ENV_NAME" --system-site-packages "${ENV_DIR}"
+python3.10 -m venv --prompt "$ENV_NAME" --system-site-packages "${ENV_DIR}"
 
 # Sources the new environment (IMPORTANT: works only with `source`)
 source "${ABSOLUTE_PATH}"/activate.sh $1 $2
 
 # Installs dependencies
 python3 -m pip install --upgrade -r "${3:-${ABSOLUTE_PATH}/requirements.txt}"
-
 
 # end of file

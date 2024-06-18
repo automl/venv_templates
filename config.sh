@@ -10,6 +10,7 @@ ABSOLUTE_PATH="$(realpath "${RELATIVE_PATH}")"
 
 ### User Configuration: uses arguments $1 and $2 if passed or defaults
 export ENV_NAME="${1:-$(basename "$ABSOLUTE_PATH")}"  # Default Name of the venv is the directory that contains this file
-export ENV_DIR="${2:-${ABSOLUTE_PATH}/venv}"  # Default location of this VENV is "./venv"
+ENV_DIR="${2:-${ABSOLUTE_PATH}/venv}"  # Default location of this VENV is "./venv"
+export ENV_DIR=${ENV_DIR}${ENV_NAME}
 
 # end of file

@@ -4,9 +4,22 @@ This branch is a modified *copy* of Stefan Kesselheim's [`sc_venv_template`](htt
 
 ### Basic example protocol
 
+Firstly, deactivate any conda environment
+
 * Have a clone of this repo on your local/workspace
 * Use the scripts available to setup, manage environments
 * Especially useful for HPCs with preset modules
+
+
+*NOTE*: check `which python3` or `which python3.x` to see the Python versions available in your remote setup and accordingly update `setup.sh`:
+```
+python3.10 -m venv ...
+```
+OR
+```
+/path/to/python3.x -m venv ...
+```
+
 
 The commands below can work even with relative path if current directory is the current target project.
 
@@ -23,6 +36,9 @@ Defaults for each option above:
 ```bash
 source activate.sh <env-name> <env-target-dir>
 ```
+Defaults for each option above:
+* <env_name>: `venv_template`
+* <env_target_dir>: `venv_templates/venv/`
 
 ### To use `Poetry` and a `pyproject.toml`
 * Run `setup.sh` with a blank `requirements.txt`
@@ -32,6 +48,7 @@ source activate.sh <env-name> <env-target-dir>
 ---
 ---
 ---
+
 Below, original repo's README:
 ---
 
