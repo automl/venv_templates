@@ -1,3 +1,4 @@
 # Add here the pip packages you would like to install on this virtual environment / kernel
 pip
 IPython
+typing-extensions
