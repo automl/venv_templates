@@ -12,7 +12,7 @@ ABSOLUTE_PATH="$(realpath "${RELATIVE_PATH}")"
 export ENV_NAME="${1:-$(basename "$ABSOLUTE_PATH")}"  # Default Name of the venv is the directory that contains this file
 ENV_DIR="${2:-${ABSOLUTE_PATH}/venv}"  # Default location of this VENV is "./venv"
 export VENV_DIR=$(realpath "${ENV_DIR}")
-export ENV_DIR=${ENV_DIR}${ENV_NAME}
+export ENV_DIR=${ENV_DIR}/${ENV_NAME}
 export VENV_REPO_DIR="${ABSOLUTE_PATH}"
 
 echo ""
